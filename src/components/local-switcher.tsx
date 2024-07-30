@@ -1,32 +1,40 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
-import { ChangeEvent, useTransition } from "react";
+import { useEffect, useState } from "react";
 
-export default function LocalSwitcher() {
-	const [isPending, startTransition] = useTransition();
+export default function LanguageSwitcher() {
 	const router = useRouter();
-	const localActive = useLocale();
+	const [selectedLanguage, setSelectedLanguage] = useState("uz");
 
-	const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-		const nextLocale = e.target.value;
-		startTransition(() => {
-			router.replace(`/${nextLocale}`);
-		});
+	useEffect(() => {
+		// Get the current path
+		const path = window.location.pathname;
+		// Set the initial language based on the path
+		if (path.startsWith("/en")) {
+			setSelectedLanguage("en");
+		} else {
+			setSelectedLanguage("uz");
+		}
+	}, []);
+
+	const handleChange = (event: any) => {
+		const language = event.target.value;
+		setSelectedLanguage(language);
+		router.push(`/${language}`);
 	};
+
 	return (
-		<label className="border-2 rounded">
-			<p className="sr-only">change language</p>
+		<div className="relative inline-block">
 			<select
-				defaultValue={localActive}
-				className="bg-transparent py-2"
-				onChange={onSelectChange}
-				disabled={isPending}
+				value={selectedLanguage}
+				onChange={handleChange}
+				className="flex items-center p-0 bg-transparent border-none cursor-pointer"
+				aria-label="Select Language"
 			>
 				<option value="en">English</option>
-				<option value="id">O'zbek</option>
+				<option value="uz">Uzbek</option>
 			</select>
-		</label>
+		</div>
 	);
 }

@@ -22,7 +22,7 @@ export default function RootLayout({ children, params: { locale } }: Readonly<Ro
 	return (
 		<html lang={locale}>
 			<body className={inter.className}>
-				<div className="flex flex-col min-h-screen max-w-4xl mx-auto">
+				<div className="flex flex-col min-h-screen  mx-auto">
 					<Main />
 				</div>
 			</body>
