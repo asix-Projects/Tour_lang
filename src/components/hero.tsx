@@ -13,11 +13,9 @@ const Hero = () => {
 					{t("dunyosizni")} <br /> {t("kutmoda")}
 				</p>
 				<button className="border-none rounded-lg p-3 text-2xl bg-green-500 text-white cursor-pointer flex items-center justify-center">
-					Buyurtma berish
+					{t("order")}
 				</button>
 			</div>
-			{/* Adjust height as needed */}
-			{/* Background Image */}
 			<Image
 				src="/Travel_Concepts_6 copy 1.png"
 				alt="Traveller"
@@ -26,7 +24,6 @@ const Hero = () => {
 				height={400}
 				className="absolute right-20  h-full"
 			/>
-			{/* Foreground Image */}
 			<Image
 				src="/Traveller 1.png"
 				alt="Travel Concepts"
