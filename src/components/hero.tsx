@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const Hero = () => {
-	const t = useTranslations("NavBar");
+	const t = useTranslations("");
 
 	return (
 		<div className="relative w-full h-[500px]">

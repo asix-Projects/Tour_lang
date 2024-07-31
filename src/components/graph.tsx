@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const Graph = () => {
-	const t = useTranslations("NavBar");
+	const t = useTranslations("");
 
 	return (
 		<div className="flex flex-col items-center mt-7 p-4 px-10 bg-[#f1f3ff]">

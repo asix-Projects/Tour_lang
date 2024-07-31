@@ -4,7 +4,7 @@ import Link from "next/link";
 import LanguageSwitcher from "./local-switcher";
 
 const NavBar = () => {
-	const t = useTranslations("NavBar");
+	const t = useTranslations("");
 
 	return (
 		<div className="w-[100%]">
