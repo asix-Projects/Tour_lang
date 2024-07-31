@@ -1,48 +1,48 @@
-"use client"; // Indicate that this is a client component
+'use client'; // Indicate that this is a client component
 
-import React, { useRef } from "react";
-import "../app/[locale]/globals.css";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
+import React, { useRef } from 'react';
+import '../app/[locale]/globals.css';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const Species = () => {
-	// const t = useTranslations("NavBar");
+	// const t = useTranslations('NavBar');
 
 	const tours = [
 		{
-			image: "/turkiya.png", // Update with the actual image path or URL
-			country: "Turkiya",
-			route: "Toshkent-Istanbul",
+			image: '/turkiya.png', // Update with the actual image path or URL
+			country: 'Turkiya',
+			route: 'Toshkent-Istanbul',
 		},
 		{
-			image: "/misr.png", // Update with the actual image path or URL
-			country: "Misr",
-			route: "Toshkent-Qohira",
+			image: '/misr.png', // Update with the actual image path or URL
+			country: 'Misr',
+			route: 'Toshkent-Qohira',
 		},
 		{
-			image: "/dubai.png", // Update with the actual image path or URL
-			country: "BAA",
-			route: "Toshkent-Dubay",
+			image: '/dubai.png', // Update with the actual image path or URL
+			country: 'BAA',
+			route: 'Toshkent-Dubay',
 		},
 		{
-			image: "/yevropa.png", // Update with the actual image path or URL
-			country: "Yevropa",
-			route: "Toshkent-Parij",
+			image: '/yevropa.png', // Update with the actual image path or URL
+			country: 'Yevropa',
+			route: 'Toshkent-Parij',
 		},
 		{
-			image: "/dubai.png", // Update with the actual image path or URL
-			country: "BAA",
-			route: "Toshkent-Dubay",
+			image: '/dubai.png', // Update with the actual image path or URL
+			country: 'BAA',
+			route: 'Toshkent-Dubay',
 		},
 		{
-			image: "/misr.png", // Update with the actual image path or URL
-			country: "Misr",
-			route: "Toshkent-Qohira",
+			image: '/misr.png', // Update with the actual image path or URL
+			country: 'Misr',
+			route: 'Toshkent-Qohira',
 		},
 		{
-			image: "/turkiya.png", // Update with the actual image path or URL
-			country: "Turkiya",
-			route: "Toshkent-Istanbul",
+			image: '/turkiya.png', // Update with the actual image path or URL
+			country: 'Turkiya',
+			route: 'Toshkent-Istanbul',
 		},
 	];
 
@@ -50,13 +50,13 @@ const Species = () => {
 
 	const scrollLeft = () => {
 		if (scrollRef.current) {
-			scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
+			scrollRef.current.scrollBy({ left: -200, behavior: 'smooth' });
 		}
 	};
 
 	const scrollRight = () => {
 		if (scrollRef.current) {
-			scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
+			scrollRef.current.scrollBy({ left: 200, behavior: 'smooth' });
 		}
 	};
 
@@ -113,14 +113,14 @@ const Species = () => {
 						<Image
 							width={150}
 							height={150}
-							src="/efill.png" // Replace with actual image path or URL
+							src="/efill.png"
 							alt="Eiffel Tower"
 							className="w-20 h-20 rounded-lg object-cover"
 						/>
 						<Image
 							width={400}
 							height={400}
-							src="/see.png" // Replace with actual image path or URL
+							src="/see.png" 
 							alt="Eiffel Tower"
 							className="w-20 h-20 rounded-lg object-cover"
 						/>

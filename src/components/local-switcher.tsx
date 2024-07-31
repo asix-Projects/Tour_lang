@@ -8,9 +8,7 @@ export default function LanguageSwitcher() {
 	const [selectedLanguage, setSelectedLanguage] = useState("uz");
 
 	useEffect(() => {
-		// Get the current path
 		const path = window.location.pathname;
-		// Set the initial language based on the path
 		if (path.startsWith("/en")) {
 			setSelectedLanguage("en");
 		} else {
