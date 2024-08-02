@@ -42,10 +42,7 @@ const Graph = () => {
 						</div>
 						{/* text */}
 						<div>
-							<p className="text-[#004290] font-bold text-xl">
-								{' '}
-								Keng <br /> yo'nalishlar <br /> tanlovi
-							</p>
+							<p className="text-[#004290] font-bold text-xl">{t('third_box')}</p>
 						</div>
 					</div>
 					{/* box */}
@@ -56,11 +53,7 @@ const Graph = () => {
 						</div>
 						{/* text */}
 						<div>
-							<p className="text-[#004290] font-bold text-xl">
-								{' '}
-								Ishonchlilik <br />
-								va <br /> xavfsizlik{' '}
-							</p>
+							<p className="text-[#004290] font-bold text-xl">{t('four_box')}</p>
 						</div>
 					</div>
 				</div>
@@ -74,10 +67,7 @@ const Graph = () => {
 						</div>
 						{/* text */}
 						<div>
-							<p className="text-[#004290] font-bold text-xl">
-								{' '}
-								Raqobatbardosh <br /> narxlar
-							</p>
+							<p className="text-[#004290] font-bold text-xl">{t('fife_box')}</p>
 						</div>
 					</div>
 					{/* box */}
@@ -88,11 +78,7 @@ const Graph = () => {
 						</div>
 						{/* text */}
 						<div>
-							<p className="text-[#004290] font-bold text-xl">
-								{' '}
-								24/7 qo'llab- <br />
-								quvvatlash
-							</p>
+							<p className="text-[#004290] font-bold text-xl">{t('six_box')}</p>
 						</div>
 					</div>
 				</div>
